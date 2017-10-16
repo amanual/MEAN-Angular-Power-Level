@@ -1,0 +1,22 @@
+<fieldset>
+  <legend>PowerComponent</legend>
+<form (submit)='calPower1()'>
+  <img src="assets/images/ninja.jpg">
+    <p>
+      Initial Power Level: <input 
+        type = "number"
+        name = "number"
+        [(ngModel)] = 'listVal'        
+        #number = 'ngModel'        
+        min = "1"
+        max = "100"> &nbsp; <input type="submit" name="submit" value="Calculate Powers">  
+    </p>
+</form>
+
+<app-level-1 [level] = "listVal"></app-level-1>
+<app-level-2 [level] = "listVal"></app-level-2>
+<app-level-3 [level] = "listVal"></app-level-3>
+<app-level-4 [level] = "listVal"></app-level-4>
+<app-level-5 [level] = "listVal"></app-level-5>
+<app-level-6 [level] = "listVal"></app-level-6>
+</fieldset>
